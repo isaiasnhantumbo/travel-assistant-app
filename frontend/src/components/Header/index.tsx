@@ -17,7 +17,7 @@ import { Container } from './styles';
 
 export function Header() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyBOi0A937RUgmOAnZTcfCXwgz_1FssGmL0',
+    googleMapsApiKey:  import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     libraries: ['places'],
   });
   const { onSelectCity, selectedCity } = useSharedData();
