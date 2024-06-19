@@ -5,6 +5,8 @@ import { Controller, ValidationService, FieldErrors, ValidateError, TsoaRoute, H
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AuthenticationController } from './../controllers/AuthenticationController';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { CitiesController } from './../controllers/CitiesController';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { UsersController } from './../controllers/UsersController';
 import type { RequestHandler } from 'express';
 import * as express from 'express';
@@ -36,6 +38,138 @@ const models: TsoaRoute.Models = {
         "properties": {
             "email": {"dataType":"string","required":true},
             "password": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "Weather": {
+        "dataType": "refObject",
+        "properties": {
+            "id": {"dataType":"double","required":true},
+            "main": {"dataType":"string","required":true},
+            "description": {"dataType":"string","required":true},
+            "icon": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "Current": {
+        "dataType": "refObject",
+        "properties": {
+            "dt": {"dataType":"double","required":true},
+            "sunrise": {"dataType":"double","required":true},
+            "sunset": {"dataType":"double","required":true},
+            "temp": {"dataType":"double","required":true},
+            "feels_like": {"dataType":"double","required":true},
+            "pressure": {"dataType":"double","required":true},
+            "humidity": {"dataType":"double","required":true},
+            "dew_point": {"dataType":"double","required":true},
+            "uvi": {"dataType":"double","required":true},
+            "clouds": {"dataType":"double","required":true},
+            "weather": {"dataType":"array","array":{"dataType":"refObject","ref":"Weather"},"required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "Temp": {
+        "dataType": "refObject",
+        "properties": {
+            "day": {"dataType":"double","required":true},
+            "min": {"dataType":"double","required":true},
+            "max": {"dataType":"double","required":true},
+            "night": {"dataType":"double","required":true},
+            "eve": {"dataType":"double","required":true},
+            "morn": {"dataType":"double","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "Daily": {
+        "dataType": "refObject",
+        "properties": {
+            "dt": {"dataType":"double","required":true},
+            "sunrise": {"dataType":"double","required":true},
+            "sunset": {"dataType":"double","required":true},
+            "moonrise": {"dataType":"double","required":true},
+            "moonset": {"dataType":"double","required":true},
+            "moon_phase": {"dataType":"double","required":true},
+            "temp": {"ref":"Temp","required":true},
+            "pressure": {"dataType":"double","required":true},
+            "humidity": {"dataType":"double","required":true},
+            "dew_point": {"dataType":"double","required":true},
+            "wind_speed": {"dataType":"double","required":true},
+            "wind_deg": {"dataType":"double","required":true},
+            "wind_gust": {"dataType":"double","required":true},
+            "weather": {"dataType":"array","array":{"dataType":"refObject","ref":"Weather"},"required":true},
+            "clouds": {"dataType":"double","required":true},
+            "pop": {"dataType":"double","required":true},
+            "uvi": {"dataType":"double","required":true},
+            "rain": {"dataType":"double"},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IWeatherApiResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "lat": {"dataType":"double","required":true},
+            "lon": {"dataType":"double","required":true},
+            "timezone": {"dataType":"string","required":true},
+            "timezone_offset": {"dataType":"double","required":true},
+            "current": {"ref":"Current","required":true},
+            "daily": {"dataType":"array","array":{"dataType":"refObject","ref":"Daily"},"required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IExchangeApiResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "success": {"dataType":"boolean","required":true},
+            "timestamp": {"dataType":"double","required":true},
+            "base": {"dataType":"string","required":true},
+            "date": {"dataType":"string","required":true},
+            "rates": {"dataType":"array","array":{"dataType":"nestedObjectLiteral","nestedProperties":{},"additionalProperties":{"dataType":"double"}},"required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IBankApiResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "page": {"dataType":"double","required":true},
+            "pages": {"dataType":"double","required":true},
+            "per_page": {"dataType":"double","required":true},
+            "total": {"dataType":"double","required":true},
+            "sourceid": {"dataType":"string","required":true},
+            "lastupdated": {"dataType":"string","required":true},
+            "indicator": {"dataType":"nestedObjectLiteral","nestedProperties":{"value":{"dataType":"string","required":true},"id":{"dataType":"string","required":true}},"required":true},
+            "country": {"dataType":"nestedObjectLiteral","nestedProperties":{"value":{"dataType":"string","required":true},"id":{"dataType":"string","required":true}},"required":true},
+            "countryiso3code": {"dataType":"string","required":true},
+            "date": {"dataType":"string","required":true},
+            "value": {"dataType":"double"},
+            "unit": {"dataType":"string","required":true},
+            "obs_status": {"dataType":"string","required":true},
+            "decimal": {"dataType":"double","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IGetCityDetailsResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "pibPerCapitalData": {"ref":"IBankApiResponse","required":true},
+            "populationData": {"ref":"IBankApiResponse","required":true},
+            "weather": {"ref":"IWeatherApiResponse","required":true},
+            "exchange": {"ref":"IExchangeApiResponse","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IGetCityPreviewResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "weather": {"ref":"IWeatherApiResponse","required":true},
         },
         "additionalProperties": false,
     },
@@ -79,6 +213,59 @@ export function RegisterRoutes(app: express.Router) {
 
 
               const promise = controller.login.apply(controller, validatedArgs as any);
+              promiseHandler(controller, promise, response, undefined, next);
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.get('/cities/details',
+            ...(fetchMiddlewares<RequestHandler>(CitiesController)),
+            ...(fetchMiddlewares<RequestHandler>(CitiesController.prototype.getCityById)),
+
+            function CitiesController_getCityById(request: any, response: any, next: any) {
+            const args = {
+                    latitude: {"in":"query","name":"latitude","required":true,"dataType":"string"},
+                    longitude: {"in":"query","name":"longitude","required":true,"dataType":"string"},
+                    country: {"in":"query","name":"country","required":true,"dataType":"string"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+
+                const controller = new CitiesController();
+
+
+              const promise = controller.getCityById.apply(controller, validatedArgs as any);
+              promiseHandler(controller, promise, response, undefined, next);
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.get('/cities/preview',
+            ...(fetchMiddlewares<RequestHandler>(CitiesController)),
+            ...(fetchMiddlewares<RequestHandler>(CitiesController.prototype.getCityByIdPreview)),
+
+            function CitiesController_getCityByIdPreview(request: any, response: any, next: any) {
+            const args = {
+                    latitude: {"in":"query","name":"latitude","required":true,"dataType":"string"},
+                    longitude: {"in":"query","name":"longitude","required":true,"dataType":"string"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+
+                const controller = new CitiesController();
+
+
+              const promise = controller.getCityByIdPreview.apply(controller, validatedArgs as any);
               promiseHandler(controller, promise, response, undefined, next);
             } catch (err) {
                 return next(err);

@@ -59,6 +59,436 @@
 				"type": "object",
 				"additionalProperties": false
 			},
+			"Weather": {
+				"properties": {
+					"id": {
+						"type": "number",
+						"format": "double"
+					},
+					"main": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"icon": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"id",
+					"main",
+					"description",
+					"icon"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"Current": {
+				"properties": {
+					"dt": {
+						"type": "number",
+						"format": "double"
+					},
+					"sunrise": {
+						"type": "number",
+						"format": "double"
+					},
+					"sunset": {
+						"type": "number",
+						"format": "double"
+					},
+					"temp": {
+						"type": "number",
+						"format": "double"
+					},
+					"feels_like": {
+						"type": "number",
+						"format": "double"
+					},
+					"pressure": {
+						"type": "number",
+						"format": "double"
+					},
+					"humidity": {
+						"type": "number",
+						"format": "double"
+					},
+					"dew_point": {
+						"type": "number",
+						"format": "double"
+					},
+					"uvi": {
+						"type": "number",
+						"format": "double"
+					},
+					"clouds": {
+						"type": "number",
+						"format": "double"
+					},
+					"weather": {
+						"items": {
+							"$ref": "#/components/schemas/Weather"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"dt",
+					"sunrise",
+					"sunset",
+					"temp",
+					"feels_like",
+					"pressure",
+					"humidity",
+					"dew_point",
+					"uvi",
+					"clouds",
+					"weather"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"Temp": {
+				"properties": {
+					"day": {
+						"type": "number",
+						"format": "double"
+					},
+					"min": {
+						"type": "number",
+						"format": "double"
+					},
+					"max": {
+						"type": "number",
+						"format": "double"
+					},
+					"night": {
+						"type": "number",
+						"format": "double"
+					},
+					"eve": {
+						"type": "number",
+						"format": "double"
+					},
+					"morn": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"day",
+					"min",
+					"max",
+					"night",
+					"eve",
+					"morn"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"Daily": {
+				"properties": {
+					"dt": {
+						"type": "number",
+						"format": "double"
+					},
+					"sunrise": {
+						"type": "number",
+						"format": "double"
+					},
+					"sunset": {
+						"type": "number",
+						"format": "double"
+					},
+					"moonrise": {
+						"type": "number",
+						"format": "double"
+					},
+					"moonset": {
+						"type": "number",
+						"format": "double"
+					},
+					"moon_phase": {
+						"type": "number",
+						"format": "double"
+					},
+					"temp": {
+						"$ref": "#/components/schemas/Temp"
+					},
+					"pressure": {
+						"type": "number",
+						"format": "double"
+					},
+					"humidity": {
+						"type": "number",
+						"format": "double"
+					},
+					"dew_point": {
+						"type": "number",
+						"format": "double"
+					},
+					"wind_speed": {
+						"type": "number",
+						"format": "double"
+					},
+					"wind_deg": {
+						"type": "number",
+						"format": "double"
+					},
+					"wind_gust": {
+						"type": "number",
+						"format": "double"
+					},
+					"weather": {
+						"items": {
+							"$ref": "#/components/schemas/Weather"
+						},
+						"type": "array"
+					},
+					"clouds": {
+						"type": "number",
+						"format": "double"
+					},
+					"pop": {
+						"type": "number",
+						"format": "double"
+					},
+					"uvi": {
+						"type": "number",
+						"format": "double"
+					},
+					"rain": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"dt",
+					"sunrise",
+					"sunset",
+					"moonrise",
+					"moonset",
+					"moon_phase",
+					"temp",
+					"pressure",
+					"humidity",
+					"dew_point",
+					"wind_speed",
+					"wind_deg",
+					"wind_gust",
+					"weather",
+					"clouds",
+					"pop",
+					"uvi"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IWeatherApiResponse": {
+				"properties": {
+					"lat": {
+						"type": "number",
+						"format": "double"
+					},
+					"lon": {
+						"type": "number",
+						"format": "double"
+					},
+					"timezone": {
+						"type": "string"
+					},
+					"timezone_offset": {
+						"type": "number",
+						"format": "double"
+					},
+					"current": {
+						"$ref": "#/components/schemas/Current"
+					},
+					"daily": {
+						"items": {
+							"$ref": "#/components/schemas/Daily"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"lat",
+					"lon",
+					"timezone",
+					"timezone_offset",
+					"current",
+					"daily"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IExchangeApiResponse": {
+				"properties": {
+					"success": {
+						"type": "boolean"
+					},
+					"timestamp": {
+						"type": "number",
+						"format": "double"
+					},
+					"base": {
+						"type": "string"
+					},
+					"date": {
+						"type": "string"
+					},
+					"rates": {
+						"items": {
+							"properties": {},
+							"additionalProperties": {
+								"type": "number",
+								"format": "double"
+							},
+							"type": "object"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"success",
+					"timestamp",
+					"base",
+					"date",
+					"rates"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IBankApiResponse": {
+				"properties": {
+					"page": {
+						"type": "number",
+						"format": "double"
+					},
+					"pages": {
+						"type": "number",
+						"format": "double"
+					},
+					"per_page": {
+						"type": "number",
+						"format": "double"
+					},
+					"total": {
+						"type": "number",
+						"format": "double"
+					},
+					"sourceid": {
+						"type": "string"
+					},
+					"lastupdated": {
+						"type": "string"
+					},
+					"indicator": {
+						"properties": {
+							"value": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"value",
+							"id"
+						],
+						"type": "object"
+					},
+					"country": {
+						"properties": {
+							"value": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"value",
+							"id"
+						],
+						"type": "object"
+					},
+					"countryiso3code": {
+						"type": "string"
+					},
+					"date": {
+						"type": "string"
+					},
+					"value": {
+						"type": "number",
+						"format": "double"
+					},
+					"unit": {
+						"type": "string"
+					},
+					"obs_status": {
+						"type": "string"
+					},
+					"decimal": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"page",
+					"pages",
+					"per_page",
+					"total",
+					"sourceid",
+					"lastupdated",
+					"indicator",
+					"country",
+					"countryiso3code",
+					"date",
+					"unit",
+					"obs_status",
+					"decimal"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IGetCityDetailsResponse": {
+				"properties": {
+					"pibPerCapitalData": {
+						"$ref": "#/components/schemas/IBankApiResponse"
+					},
+					"populationData": {
+						"$ref": "#/components/schemas/IBankApiResponse"
+					},
+					"weather": {
+						"$ref": "#/components/schemas/IWeatherApiResponse"
+					},
+					"exchange": {
+						"$ref": "#/components/schemas/IExchangeApiResponse"
+					}
+				},
+				"required": [
+					"pibPerCapitalData",
+					"populationData",
+					"weather",
+					"exchange"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IGetCityPreviewResponse": {
+				"properties": {
+					"weather": {
+						"$ref": "#/components/schemas/IWeatherApiResponse"
+					}
+				},
+				"required": [
+					"weather"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
 			"ICreateUser": {
 				"properties": {
 					"name": {
@@ -131,6 +561,93 @@
 						}
 					}
 				}
+			}
+		},
+		"/cities/details": {
+			"get": {
+				"operationId": "GetCityById",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IGetCityDetailsResponse"
+								}
+							}
+						}
+					}
+				},
+				"description": "Cities Information Routes",
+				"tags": [
+					"Cities Routes"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "latitude",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "longitude",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "country",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/cities/preview": {
+			"get": {
+				"operationId": "GetCityByIdPreview",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IGetCityPreviewResponse"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Cities Routes"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "latitude",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "longitude",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
 			}
 		},
 		"/users": {
