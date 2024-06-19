@@ -12,6 +12,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1.125rem 1.375rem;
+  @media (max-width: 720px) {
+    width: 12.25rem;
+  }
   h4 {
     font-weight: 500;
     font-size: 1rem;

@@ -8,6 +8,7 @@ import {
   Path,
   Post,
   Route,
+  Security,
   SuccessResponse,
   Tags
 } from "tsoa";
@@ -40,6 +41,7 @@ export class UsersController extends Controller {
     return user;
   }
 
+  @Security("jwt")
   @Get()
   public async getUsers (): Promise<UserDto[]> {
     const getAllUsers = container.resolve(GetAllUsers);
@@ -47,6 +49,7 @@ export class UsersController extends Controller {
     return users;
   }
 
+  @Security("jwt")
   @Get("{userId}")
   public async getUserById (@Path() userId: string): Promise<UserDto> {
     const getUserById = container.resolve(GetUserById);
@@ -54,6 +57,7 @@ export class UsersController extends Controller {
     return user;
   }
 
+  @Security("jwt")
   @Patch("{userId}")
   public async updateUser (
     @Path() userId: string,
@@ -64,6 +68,7 @@ export class UsersController extends Controller {
     return user;
   }
 
+  @Security("jwt")
   @Delete("{userId}")
   public async deleteUser (@Path() userId: string): Promise<UserDto> {
     const deleteUser = container.resolve(DeleteUser);

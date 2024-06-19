@@ -323,6 +323,18 @@
 				"type": "object",
 				"additionalProperties": false
 			},
+			"IGetCityPreviewResponse": {
+				"properties": {
+					"weather": {
+						"$ref": "#/components/schemas/IWeatherApiResponse"
+					}
+				},
+				"required": [
+					"weather"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
 			"IExchangeApiResponse": {
 				"properties": {
 					"success": {
@@ -360,30 +372,8 @@
 				"type": "object",
 				"additionalProperties": false
 			},
-			"IBankApiResponse": {
+			"IData": {
 				"properties": {
-					"page": {
-						"type": "number",
-						"format": "double"
-					},
-					"pages": {
-						"type": "number",
-						"format": "double"
-					},
-					"per_page": {
-						"type": "number",
-						"format": "double"
-					},
-					"total": {
-						"type": "number",
-						"format": "double"
-					},
-					"sourceid": {
-						"type": "string"
-					},
-					"lastupdated": {
-						"type": "string"
-					},
 					"indicator": {
 						"properties": {
 							"value": {
@@ -436,12 +426,6 @@
 					}
 				},
 				"required": [
-					"page",
-					"pages",
-					"per_page",
-					"total",
-					"sourceid",
-					"lastupdated",
 					"indicator",
 					"country",
 					"countryiso3code",
@@ -449,6 +433,18 @@
 					"unit",
 					"obs_status",
 					"decimal"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IBankApiResponse": {
+				"properties": {
+					"data": {
+						"$ref": "#/components/schemas/IData"
+					}
+				},
+				"required": [
+					"data"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -473,18 +469,6 @@
 					"populationData",
 					"weather",
 					"exchange"
-				],
-				"type": "object",
-				"additionalProperties": false
-			},
-			"IGetCityPreviewResponse": {
-				"properties": {
-					"weather": {
-						"$ref": "#/components/schemas/IWeatherApiResponse"
-					}
-				},
-				"required": [
-					"weather"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -563,16 +547,16 @@
 				}
 			}
 		},
-		"/cities/details": {
+		"/cities/preview": {
 			"get": {
-				"operationId": "GetCityById",
+				"operationId": "GetCityByIdPreview",
 				"responses": {
 					"200": {
 						"description": "Ok",
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/IGetCityDetailsResponse"
+									"$ref": "#/components/schemas/IGetCityPreviewResponse"
 								}
 							}
 						}
@@ -599,28 +583,20 @@
 						"schema": {
 							"type": "string"
 						}
-					},
-					{
-						"in": "query",
-						"name": "country",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
 					}
 				]
 			}
 		},
-		"/cities/preview": {
+		"/cities/details": {
 			"get": {
-				"operationId": "GetCityByIdPreview",
+				"operationId": "GetCityById",
 				"responses": {
 					"200": {
 						"description": "Ok",
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/IGetCityPreviewResponse"
+									"$ref": "#/components/schemas/IGetCityDetailsResponse"
 								}
 							}
 						}
@@ -629,7 +605,11 @@
 				"tags": [
 					"Cities Routes"
 				],
-				"security": [],
+				"security": [
+					{
+						"jwt": []
+					}
+				],
 				"parameters": [
 					{
 						"in": "query",
@@ -642,6 +622,14 @@
 					{
 						"in": "query",
 						"name": "longitude",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "country",
 						"required": true,
 						"schema": {
 							"type": "string"
@@ -711,7 +699,11 @@
 				"tags": [
 					"Users Routes"
 				],
-				"security": [],
+				"security": [
+					{
+						"jwt": []
+					}
+				],
 				"parameters": []
 			}
 		},
@@ -733,7 +725,11 @@
 				"tags": [
 					"Users Routes"
 				],
-				"security": [],
+				"security": [
+					{
+						"jwt": []
+					}
+				],
 				"parameters": [
 					{
 						"in": "path",
@@ -762,7 +758,11 @@
 				"tags": [
 					"Users Routes"
 				],
-				"security": [],
+				"security": [
+					{
+						"jwt": []
+					}
+				],
 				"parameters": [
 					{
 						"in": "path",
@@ -801,7 +801,11 @@
 				"tags": [
 					"Users Routes"
 				],
-				"security": [],
+				"security": [
+					{
+						"jwt": []
+					}
+				],
 				"parameters": [
 					{
 						"in": "path",

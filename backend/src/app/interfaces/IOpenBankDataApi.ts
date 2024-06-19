@@ -23,7 +23,9 @@ export interface IData {
   obs_status: string
   decimal: number
 }
-export interface IBankApiResponse extends IPagination, IData {}
+export interface IBankApiResponse {
+  data: IData
+}
 
 export interface IBankDataApi {
   getPibPerCapitalDataByCountry: (

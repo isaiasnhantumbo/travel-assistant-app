@@ -21,7 +21,7 @@ const limiter = rateLimit({
 });
 // DTO's
 new MappingProfiles().MappingProfiles();
-app.use(limiter);
+// app.use(limiter);
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));

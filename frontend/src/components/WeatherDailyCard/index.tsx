@@ -23,8 +23,8 @@ export function WeatherDailyCard({
   weekDay,
 }: WeatherDailyCardProps) {
   const formattedWeekDay = format(fromUnixTime(weekDay), 'EEE,dd LLL');
-  const formattedMinTemperature = Math.floor(minTemperature / 10);
-  const formattedMaxTemperature = Math.floor(maxTemperature / 10);
+  const formattedMinTemperature = Math.floor(minTemperature );
+  const formattedMaxTemperature = Math.floor(maxTemperature );
 
   return (
     <Container>

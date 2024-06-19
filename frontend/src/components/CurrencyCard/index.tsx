@@ -1,38 +1,29 @@
-import { format, fromUnixTime } from 'date-fns';
-
-import { Container, TemperatureValue } from './styles';
-
-// interface WeatherDaily {
-//   minTemperature: number;
-//   maxTemperature: number;
-//   weekDay: number;
-// }
-
-// interface WeatherDailyCardProps extends WeatherDaily {
-//   weatherState: {
-//     main: string;
-//     description: string;
-//     icon: string;
-//   };
-// }
+import { useSharedData } from '../../hooks/useSharedData';
+import { Container, Value } from './styles';
 
 export function CurrencyCard() {
-  // const formattedWeekDay = format(fromUnixTime(weekDay), 'EEE,dd LLL');
-  // const formattedMinTemperature = Math.floor(minTemperature / 10);
-  // const formattedMaxTemperature = Math.floor(maxTemperature / 10);
-
+  const { shared, isLoggedIn } = useSharedData();
   return (
-    <Container>
+    <Container isLoggedIn={isLoggedIn}>
       <h3>Cambio</h3>
 
       <div className="currency-list">
-        <div className="temperatureValueContainer">
-          <h4>USD</h4>
-          <TemperatureValue isMinTemperature>75.8</TemperatureValue>
-        </div>
-        <div className="temperatureValueContainer">
+        <div className="valueContainer">
           <h4>EUR</h4>
-          <TemperatureValue isMinTemperature>75.8</TemperatureValue>
+          <Value>{shared?.exchange?.rates?.EUR.toFixed(2)}</Value>
+        </div>
+        <div className="valueContainer">
+          <h4>USD</h4>
+          <Value>{shared?.exchange?.rates?.USD.toFixed(2)}</Value>
+        </div>
+
+        <div className="valueContainer">
+          <h4>MZN</h4>
+          <Value>{shared?.exchange?.rates?.MZN.toFixed(2)}</Value>
+        </div>
+        <div className="valueContainer">
+          <h4>ZAR</h4>
+          <Value>{shared?.exchange?.rates?.ZAR.toFixed(2)}</Value>
         </div>
       </div>
     </Container>

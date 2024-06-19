@@ -1,0 +1,2409 @@
+{
+  "weather": {
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "timezone": "Europe/Lisbon",
+    "timezone_offset": 3600,
+    "current": {
+      "dt": 1718790828,
+      "sunrise": 1718773901,
+      "sunset": 1718827456,
+      "temp": 19.64,
+      "feels_like": 19.44,
+      "pressure": 1015,
+      "humidity": 68,
+      "dew_point": 13.58,
+      "uvi": 4.55,
+      "clouds": 40,
+      "visibility": 10000,
+      "wind_speed": 5.14,
+      "wind_deg": 330,
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ]
+    },
+    "minutely": [
+      {
+        "dt": 1718790840,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718790900,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718790960,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791020,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791080,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791140,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791200,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791260,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791320,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791380,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791440,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791500,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791560,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791620,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791680,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791740,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791800,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791860,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791920,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718791980,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792040,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792100,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792160,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792220,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792280,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792340,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792400,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792460,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792520,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792580,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792640,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792700,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792760,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792820,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792880,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718792940,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793000,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793060,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793120,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793180,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793240,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793300,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793360,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793420,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793480,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793540,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793600,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793660,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793720,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793780,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793840,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793900,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718793960,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794020,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794080,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794140,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794200,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794260,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794320,
+        "precipitation": 0
+      },
+      {
+        "dt": 1718794380,
+        "precipitation": 0
+      }
+    ],
+    "daily": [
+      {
+        "dt": 1718798400,
+        "sunrise": 1718773901,
+        "sunset": 1718827456,
+        "moonrise": 1718819880,
+        "moonset": 1718765280,
+        "moon_phase": 0.41,
+        "temp": {
+          "day": 20.41,
+          "min": 15.13,
+          "max": 22.19,
+          "night": 16.76,
+          "eve": 20.15,
+          "morn": 16.2
+        },
+        "feels_like": {
+          "day": 20.1,
+          "night": 16.66,
+          "eve": 19.74,
+          "morn": 16.07
+        },
+        "pressure": 1015,
+        "humidity": 61,
+        "dew_point": 12.64,
+        "wind_speed": 6.92,
+        "wind_deg": 340,
+        "wind_gust": 10.6,
+        "weather": [
+          {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+          }
+        ],
+        "clouds": 30,
+        "pop": 1,
+        "rain": 2.89,
+        "uvi": 7.1
+      },
+      {
+        "dt": 1718884800,
+        "sunrise": 1718860311,
+        "sunset": 1718913871,
+        "moonrise": 1718910300,
+        "moonset": 1718853840,
+        "moon_phase": 0.45,
+        "temp": {
+          "day": 20.7,
+          "min": 16.09,
+          "max": 21.72,
+          "night": 17.03,
+          "eve": 19.58,
+          "morn": 16.44
+        },
+        "feels_like": {
+          "day": 20.34,
+          "night": 16.67,
+          "eve": 19.16,
+          "morn": 16.1
+        },
+        "pressure": 1020,
+        "humidity": 58,
+        "dew_point": 12.1,
+        "wind_speed": 7.14,
+        "wind_deg": 323,
+        "wind_gust": 10.36,
+        "weather": [
+          {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+          }
+        ],
+        "clouds": 96,
+        "pop": 0.03,
+        "uvi": 6.16
+      },
+      {
+        "dt": 1718971200,
+        "sunrise": 1718946723,
+        "sunset": 1719000283,
+        "moonrise": 1719000600,
+        "moonset": 1718942940,
+        "moon_phase": 0.48,
+        "temp": {
+          "day": 24.3,
+          "min": 16.1,
+          "max": 24.92,
+          "night": 16.4,
+          "eve": 21.28,
+          "morn": 16.48
+        },
+        "feels_like": {
+          "day": 23.96,
+          "night": 16.03,
+          "eve": 20.8,
+          "morn": 16.14
+        },
+        "pressure": 1022,
+        "humidity": 45,
+        "dew_point": 11.64,
+        "wind_speed": 7.59,
+        "wind_deg": 340,
+        "wind_gust": 13.57,
+        "weather": [
+          {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+          }
+        ],
+        "clouds": 25,
+        "pop": 0,
+        "uvi": 9.17
+      },
+      {
+        "dt": 1719057600,
+        "sunrise": 1719033136,
+        "sunset": 1719086694,
+        "moonrise": 1719090480,
+        "moonset": 1719032700,
+        "moon_phase": 0.5,
+        "temp": {
+          "day": 26.37,
+          "min": 15,
+          "max": 26.37,
+          "night": 19.16,
+          "eve": 23.13,
+          "morn": 15.23
+        },
+        "feels_like": {
+          "day": 26.37,
+          "night": 18.88,
+          "eve": 22.8,
+          "morn": 14.79
+        },
+        "pressure": 1021,
+        "humidity": 42,
+        "dew_point": 12.73,
+        "wind_speed": 8.01,
+        "wind_deg": 352,
+        "wind_gust": 14.84,
+        "weather": [
+          {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+          }
+        ],
+        "clouds": 42,
+        "pop": 0,
+        "uvi": 8.79
+      },
+      {
+        "dt": 1719144000,
+        "sunrise": 1719119551,
+        "sunset": 1719173103,
+        "moonrise": 1719179820,
+        "moonset": 1719123000,
+        "moon_phase": 0.55,
+        "temp": {
+          "day": 29.52,
+          "min": 17.54,
+          "max": 30.69,
+          "night": 21.18,
+          "eve": 25.73,
+          "morn": 17.54
+        },
+        "feels_like": {
+          "day": 29.05,
+          "night": 21.21,
+          "eve": 25.61,
+          "morn": 17.52
+        },
+        "pressure": 1014,
+        "humidity": 39,
+        "dew_point": 13.92,
+        "wind_speed": 7.04,
+        "wind_deg": 334,
+        "wind_gust": 13.06,
+        "weather": [
+          {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02d"
+          }
+        ],
+        "clouds": 23,
+        "pop": 0,
+        "uvi": 9.09
+      },
+      {
+        "dt": 1719230400,
+        "sunrise": 1719205968,
+        "sunset": 1719259510,
+        "moonrise": 1719268680,
+        "moonset": 1719213780,
+        "moon_phase": 0.59,
+        "temp": {
+          "day": 26.76,
+          "min": 18.48,
+          "max": 26.76,
+          "night": 18.49,
+          "eve": 22.26,
+          "morn": 18.48
+        },
+        "feels_like": {
+          "day": 27.31,
+          "night": 18.54,
+          "eve": 22.29,
+          "morn": 18.66
+        },
+        "pressure": 1011,
+        "humidity": 52,
+        "dew_point": 16.19,
+        "wind_speed": 6.33,
+        "wind_deg": 320,
+        "wind_gust": 10.46,
+        "weather": [
+          {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+          }
+        ],
+        "clouds": 0,
+        "pop": 0,
+        "uvi": 10
+      },
+      {
+        "dt": 1719316800,
+        "sunrise": 1719292387,
+        "sunset": 1719345916,
+        "moonrise": 0,
+        "moonset": 1719304680,
+        "moon_phase": 0.62,
+        "temp": {
+          "day": 22.67,
+          "min": 17.74,
+          "max": 22.71,
+          "night": 18.37,
+          "eve": 20.8,
+          "morn": 18
+        },
+        "feels_like": {
+          "day": 22.51,
+          "night": 18.43,
+          "eve": 20.71,
+          "morn": 18
+        },
+        "pressure": 1012,
+        "humidity": 58,
+        "dew_point": 13.82,
+        "wind_speed": 7.28,
+        "wind_deg": 321,
+        "wind_gust": 13.04,
+        "weather": [
+          {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+          }
+        ],
+        "clouds": 71,
+        "pop": 0,
+        "uvi": 10
+      },
+      {
+        "dt": 1719403200,
+        "sunrise": 1719378807,
+        "sunset": 1719432319,
+        "moonrise": 1719357060,
+        "moonset": 1719395520,
+        "moon_phase": 0.66,
+        "temp": {
+          "day": 23.48,
+          "min": 17.73,
+          "max": 23.48,
+          "night": 17.75,
+          "eve": 20.39,
+          "morn": 17.88
+        },
+        "feels_like": {
+          "day": 23.19,
+          "night": 17.64,
+          "eve": 20.16,
+          "morn": 17.79
+        },
+        "pressure": 1013,
+        "humidity": 50,
+        "dew_point": 12.67,
+        "wind_speed": 7.81,
+        "wind_deg": 321,
+        "wind_gust": 12.37,
+        "weather": [
+          {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+          }
+        ],
+        "clouds": 72,
+        "pop": 0,
+        "uvi": 10
+      }
+    ],
+    "alerts": [
+      {
+        "sender_name": "Instituto Português do Mar e da Atmosfera",
+        "event": "Yellow Thunderstorm Warning",
+        "start": 1718787600,
+        "end": 1718830800,
+        "description": "Frequent and scattered.",
+        "tags": ["Thunderstorm"]
+      },
+      {
+        "sender_name": "Instituto Português do Mar e da Atmosfera",
+        "event": "Yellow Rain Warning",
+        "start": 1718787600,
+        "end": 1718830800,
+        "description": "Showers, which locally can be strong, accompanied by thunderstorms and with hail.",
+        "tags": ["Rain"]
+      }
+    ]
+  },
+  "exchange": {
+    "success": true,
+    "timestamp": 1718790802,
+    "base": "EUR",
+    "date": "2024-06-19",
+    "rates": {
+      "AED": 3.943437,
+      "AFN": 75.873231,
+      "ALL": 100.428739,
+      "AMD": 416.607922,
+      "ANG": 1.931291,
+      "AOA": 918.474699,
+      "ARS": 972.428762,
+      "AUD": 1.609381,
+      "AWG": 1.932512,
+      "AZN": 1.828479,
+      "BAM": 1.95535,
+      "BBD": 2.163642,
+      "BDT": 125.910999,
+      "BGN": 1.956325,
+      "BHD": 0.404631,
+      "BIF": 3080.947751,
+      "BMD": 1.073618,
+      "BND": 1.450893,
+      "BOB": 7.404295,
+      "BRL": 5.841663,
+      "BSD": 1.071573,
+      "BTC": 0.000016429114,
+      "BTN": 89.366381,
+      "BWP": 14.510928,
+      "BYN": 3.506458,
+      "BYR": 21042.907135,
+      "BZD": 2.160043,
+      "CAD": 1.473057,
+      "CDF": 3049.074606,
+      "CHF": 0.950173,
+      "CLF": 0.036393,
+      "CLP": 1004.197327,
+      "CNY": 7.791353,
+      "CNH": 7.812797,
+      "COP": 4438.324881,
+      "CRC": 563.065063,
+      "CUC": 1.073618,
+      "CUP": 28.450869,
+      "CVE": 110.240635,
+      "CZK": 24.89516,
+      "DJF": 190.799607,
+      "DKK": 7.460044,
+      "DOP": 63.38481,
+      "DZD": 144.452818,
+      "EGP": 51.219616,
+      "ERN": 16.104266,
+      "ETB": 61.806264,
+      "EUR": 1,
+      "FJD": 2.407856,
+      "FKP": 0.842363,
+      "GBP": 0.843343,
+      "GEL": 3.049194,
+      "GGP": 0.842363,
+      "GHS": 16.127661,
+      "GIP": 0.842363,
+      "GMD": 72.737607,
+      "GNF": 9224.961116,
+      "GTQ": 8.315162,
+      "GYD": 224.1036,
+      "HKD": 8.380289,
+      "HNL": 26.492898,
+      "HRK": 7.535119,
+      "HTG": 141.98994,
+      "HUF": 395.806339,
+      "IDR": 17572.867331,
+      "ILS": 3.990234,
+      "IMP": 0.842363,
+      "INR": 89.60864,
+      "IQD": 1402.68998,
+      "IRR": 45185.888013,
+      "ISK": 149.318624,
+      "JEP": 0.842363,
+      "JMD": 166.544742,
+      "JOD": 0.760877,
+      "JPY": 169.479684,
+      "KES": 138.775521,
+      "KGS": 94.050625,
+      "KHR": 4415.065314,
+      "KMF": 492.629914,
+      "KPW": 966.256081,
+      "KRW": 1482.418807,
+      "KWD": 0.329085,
+      "KYD": 0.893003,
+      "KZT": 492.751093,
+      "LAK": 23497.806557,
+      "LBP": 95962.584349,
+      "LKR": 326.837763,
+      "LRD": 208.055954,
+      "LSL": 19.427906,
+      "LTL": 3.170114,
+      "LVL": 0.649421,
+      "LYD": 5.1959,
+      "MAD": 10.709183,
+      "MDL": 19.138948,
+      "MGA": 4798.984036,
+      "MKD": 61.589341,
+      "MMK": 3487.068446,
+      "MNT": 3703.981208,
+      "MOP": 8.617115,
+      "MRU": 42.198887,
+      "MUR": 50.169099,
+      "MVR": 16.528344,
+      "MWK": 1858.006653,
+      "MXN": 19.774395,
+      "MYR": 5.055131,
+      "MZN": 68.384123,
+      "NAD": 19.427906,
+      "NGN": 1622.354791,
+      "NIO": 39.44165,
+      "NOK": 11.352707,
+      "NPR": 142.984066,
+      "NZD": 1.749575,
+      "OMR": 0.413247,
+      "PAB": 1.071553,
+      "PEN": 4.067463,
+      "PGK": 4.176077,
+      "PHP": 63.062137,
+      "PKR": 298.48321,
+      "PLN": 4.338478,
+      "PYG": 8059.293816,
+      "QAR": 3.908236,
+      "RON": 4.976911,
+      "RSD": 117.089849,
+      "RUB": 89.242328,
+      "RWF": 1396.00446,
+      "SAR": 4.028162,
+      "SBD": 9.095621,
+      "SCR": 14.962661,
+      "SDG": 645.24438,
+      "SEK": 11.207055,
+      "SGD": 1.450066,
+      "SHP": 1.356462,
+      "SLE": 24.529269,
+      "SLL": 22513.228648,
+      "SOS": 612.470338,
+      "SRD": 33.530203,
+      "STD": 22221.718991,
+      "SVC": 9.376928,
+      "SYP": 2697.497165,
+      "SZL": 19.421888,
+      "THB": 39.37761,
+      "TJS": 11.465959,
+      "TMT": 3.757662,
+      "TND": 3.354958,
+      "TOP": 2.534706,
+      "TRY": 34.958152,
+      "TTD": 7.279391,
+      "TWD": 34.746566,
+      "TZS": 2802.142326,
+      "UAH": 43.490793,
+      "UGX": 3984.119437,
+      "USD": 1.073618,
+      "UYU": 42.090697,
+      "UZS": 13530.883398,
+      "VEF": 3889236.559869,
+      "VES": 39.024313,
+      "VND": 27326.254788,
+      "VUV": 127.462015,
+      "WST": 3.00679,
+      "XAF": 655.818161,
+      "XAG": 0.036372,
+      "XAU": 0.000461,
+      "XCD": 2.901506,
+      "XDR": 0.813328,
+      "XOF": 655.818161,
+      "XPF": 119.331742,
+      "YER": 268.78013,
+      "ZAR": 19.316326,
+      "ZMK": 9663.849411,
+      "ZMW": 27.674141,
+      "ZWL": 345.704465
+    }
+  },
+  "pibPerCapitalData": [
+    {
+      "page": 1,
+      "pages": 2,
+      "per_page": 50,
+      "total": 64,
+      "sourceid": "2",
+      "lastupdated": "2024-05-30"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2023",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2022",
+        "value": 18406835954.6695,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2021",
+        "value": 16168056388.9101,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2020",
+        "value": 14235420505.2904,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2019",
+        "value": 15512759174.573,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2018",
+        "value": 15017358750.6113,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2017",
+        "value": 13264640645.7768,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2016",
+        "value": 12069051237.1711,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2015",
+        "value": 16208985769.615,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2014",
+        "value": 17978246586.0662,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2013",
+        "value": 17198073057.1981,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2012",
+        "value": 16688114144.0745,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2011",
+        "value": 14619279988.716,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2010",
+        "value": 11411894723.864,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2009",
+        "value": 12263894790.0125,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2008",
+        "value": 12920340964.6544,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2007",
+        "value": 10811456005.9405,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2006",
+        "value": 9509835536.93373,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2005",
+        "value": 8868504899.94673,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2004",
+        "value": 7937255565.35765,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2003",
+        "value": 6583526860.58062,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2002",
+        "value": 5950769426.60213,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2001",
+        "value": 5650154067.10346,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2000",
+        "value": 5930685214.61595,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1999",
+        "value": 6285219691.22462,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1998",
+        "value": 5551118148.73836,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1997",
+        "value": 4873663774.93019,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1996",
+        "value": 4030146134.5706,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1995",
+        "value": 3061646173.73938,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1994",
+        "value": 2958108170.32061,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1993",
+        "value": 2883161897.42651,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1992",
+        "value": 2798696511.18156,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1991",
+        "value": 3854856434.58062,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1990",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1989",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1988",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1987",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1986",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1985",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1984",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1983",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1982",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1981",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1980",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1979",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1978",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1977",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1976",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1975",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1974",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ],
+  "populationData": [
+    {
+      "page": 1,
+      "pages": 2,
+      "per_page": 50,
+      "total": 64,
+      "sourceid": "2",
+      "lastupdated": "2024-05-30"
+    },
+    [
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2023",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2022",
+        "value": 32969518,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2021",
+        "value": 32077072,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2020",
+        "value": 31178239,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2019",
+        "value": 30285595,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2018",
+        "value": 29423878,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2017",
+        "value": 28569441,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2016",
+        "value": 27696493,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2015",
+        "value": 26843246,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2014",
+        "value": 26038704,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2013",
+        "value": 25251731,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2012",
+        "value": 24487611,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2011",
+        "value": 23760421,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2010",
+        "value": 23073723,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2009",
+        "value": 22436660,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2008",
+        "value": 21845571,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2007",
+        "value": 21280513,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2006",
+        "value": 20735982,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2005",
+        "value": 20211114,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2004",
+        "value": 19694411,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2003",
+        "value": 19186754,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2002",
+        "value": 18694946,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2001",
+        "value": 18220716,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "2000",
+        "value": 17768505,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1999",
+        "value": 17337893,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1998",
+        "value": 16923195,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1997",
+        "value": 16521724,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1996",
+        "value": 16079553,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1995",
+        "value": 15594830,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1994",
+        "value": 14912873,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1993",
+        "value": 14206254,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1992",
+        "value": 13816881,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1991",
+        "value": 13561175,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1990",
+        "value": 13303459,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1989",
+        "value": 13087604,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1988",
+        "value": 12956772,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1987",
+        "value": 12964793,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1986",
+        "value": 12909797,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1985",
+        "value": 12680065,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1984",
+        "value": 12426223,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1983",
+        "value": 12163328,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1982",
+        "value": 11901827,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1981",
+        "value": 11640015,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1980",
+        "value": 11413587,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1979",
+        "value": 11127844,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1978",
+        "value": 10741128,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1977",
+        "value": 10363575,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1976",
+        "value": 10019210,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1975",
+        "value": 9703732,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "MZ",
+          "value": "Mozambique"
+        },
+        "countryiso3code": "MOZ",
+        "date": "1974",
+        "value": 9404221,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ]
+}

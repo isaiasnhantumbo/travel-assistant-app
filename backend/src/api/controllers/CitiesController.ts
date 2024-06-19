@@ -9,6 +9,7 @@ import {
   Post,
   Query,
   Route,
+  Security,
   SuccessResponse,
   Tags
 } from "tsoa";
@@ -32,7 +33,20 @@ export class CitiesController extends Controller {
   /**
    * Cities Information Routes
    */
+  @Get("/preview")
+  public async getCityByIdPreview (
+    @Query() latitude: string,
+      @Query() longitude: string
+  ): Promise<IGetCityPreviewResponse> {
+    const getWeather = container.resolve(GetWeatherByCity);
+    const weather = await getWeather.handle(
+      Number(latitude),
+      Number(longitude)
+    );
+    return { weather };
+  }
 
+  @Security("jwt")
   @Get("/details")
   public async getCityById (
     @Query() latitude: string,
@@ -59,18 +73,5 @@ export class CitiesController extends Controller {
       pibPerCapitalData,
       populationData
     };
-  }
-
-  @Get("/preview")
-  public async getCityByIdPreview (
-    @Query() latitude: string,
-      @Query() longitude: string
-  ): Promise<IGetCityPreviewResponse> {
-    const getWeather = container.resolve(GetWeatherByCity);
-    const weather = await getWeather.handle(
-      Number(latitude),
-      Number(longitude)
-    );
-    return { weather };
   }
 }

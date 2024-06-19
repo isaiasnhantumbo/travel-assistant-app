@@ -8,6 +8,9 @@ import { AuthenticationController } from './../controllers/AuthenticationControl
 import { CitiesController } from './../controllers/CitiesController';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { UsersController } from './../controllers/UsersController';
+import { expressAuthentication } from './../middlewares/authentication';
+// @ts-ignore - no great way to install types from subpackage
+const promiseAny = require('promise.any');
 import type { RequestHandler } from 'express';
 import * as express from 'express';
 
@@ -122,6 +125,14 @@ const models: TsoaRoute.Models = {
         "additionalProperties": false,
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IGetCityPreviewResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "weather": {"ref":"IWeatherApiResponse","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "IExchangeApiResponse": {
         "dataType": "refObject",
         "properties": {
@@ -134,15 +145,9 @@ const models: TsoaRoute.Models = {
         "additionalProperties": false,
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-    "IBankApiResponse": {
+    "IData": {
         "dataType": "refObject",
         "properties": {
-            "page": {"dataType":"double","required":true},
-            "pages": {"dataType":"double","required":true},
-            "per_page": {"dataType":"double","required":true},
-            "total": {"dataType":"double","required":true},
-            "sourceid": {"dataType":"string","required":true},
-            "lastupdated": {"dataType":"string","required":true},
             "indicator": {"dataType":"nestedObjectLiteral","nestedProperties":{"value":{"dataType":"string","required":true},"id":{"dataType":"string","required":true}},"required":true},
             "country": {"dataType":"nestedObjectLiteral","nestedProperties":{"value":{"dataType":"string","required":true},"id":{"dataType":"string","required":true}},"required":true},
             "countryiso3code": {"dataType":"string","required":true},
@@ -155,6 +160,14 @@ const models: TsoaRoute.Models = {
         "additionalProperties": false,
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IBankApiResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "data": {"ref":"IData","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "IGetCityDetailsResponse": {
         "dataType": "refObject",
         "properties": {
@@ -162,14 +175,6 @@ const models: TsoaRoute.Models = {
             "populationData": {"ref":"IBankApiResponse","required":true},
             "weather": {"ref":"IWeatherApiResponse","required":true},
             "exchange": {"ref":"IExchangeApiResponse","required":true},
-        },
-        "additionalProperties": false,
-    },
-    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-    "IGetCityPreviewResponse": {
-        "dataType": "refObject",
-        "properties": {
-            "weather": {"ref":"IWeatherApiResponse","required":true},
         },
         "additionalProperties": false,
     },
@@ -219,33 +224,6 @@ export function RegisterRoutes(app: express.Router) {
             }
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-        app.get('/cities/details',
-            ...(fetchMiddlewares<RequestHandler>(CitiesController)),
-            ...(fetchMiddlewares<RequestHandler>(CitiesController.prototype.getCityById)),
-
-            function CitiesController_getCityById(request: any, response: any, next: any) {
-            const args = {
-                    latitude: {"in":"query","name":"latitude","required":true,"dataType":"string"},
-                    longitude: {"in":"query","name":"longitude","required":true,"dataType":"string"},
-                    country: {"in":"query","name":"country","required":true,"dataType":"string"},
-            };
-
-            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-
-            let validatedArgs: any[] = [];
-            try {
-                validatedArgs = getValidatedArgs(args, request, response);
-
-                const controller = new CitiesController();
-
-
-              const promise = controller.getCityById.apply(controller, validatedArgs as any);
-              promiseHandler(controller, promise, response, undefined, next);
-            } catch (err) {
-                return next(err);
-            }
-        });
-        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/cities/preview',
             ...(fetchMiddlewares<RequestHandler>(CitiesController)),
             ...(fetchMiddlewares<RequestHandler>(CitiesController.prototype.getCityByIdPreview)),
@@ -266,6 +244,34 @@ export function RegisterRoutes(app: express.Router) {
 
 
               const promise = controller.getCityByIdPreview.apply(controller, validatedArgs as any);
+              promiseHandler(controller, promise, response, undefined, next);
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.get('/cities/details',
+            authenticateMiddleware([{"jwt":[]}]),
+            ...(fetchMiddlewares<RequestHandler>(CitiesController)),
+            ...(fetchMiddlewares<RequestHandler>(CitiesController.prototype.getCityById)),
+
+            function CitiesController_getCityById(request: any, response: any, next: any) {
+            const args = {
+                    latitude: {"in":"query","name":"latitude","required":true,"dataType":"string"},
+                    longitude: {"in":"query","name":"longitude","required":true,"dataType":"string"},
+                    country: {"in":"query","name":"country","required":true,"dataType":"string"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+
+                const controller = new CitiesController();
+
+
+              const promise = controller.getCityById.apply(controller, validatedArgs as any);
               promiseHandler(controller, promise, response, undefined, next);
             } catch (err) {
                 return next(err);
@@ -298,6 +304,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/users',
+            authenticateMiddleware([{"jwt":[]}]),
             ...(fetchMiddlewares<RequestHandler>(UsersController)),
             ...(fetchMiddlewares<RequestHandler>(UsersController.prototype.getUsers)),
 
@@ -322,6 +329,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/users/:userId',
+            authenticateMiddleware([{"jwt":[]}]),
             ...(fetchMiddlewares<RequestHandler>(UsersController)),
             ...(fetchMiddlewares<RequestHandler>(UsersController.prototype.getUserById)),
 
@@ -347,6 +355,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.patch('/users/:userId',
+            authenticateMiddleware([{"jwt":[]}]),
             ...(fetchMiddlewares<RequestHandler>(UsersController)),
             ...(fetchMiddlewares<RequestHandler>(UsersController.prototype.updateUser)),
 
@@ -373,6 +382,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.delete('/users/:userId',
+            authenticateMiddleware([{"jwt":[]}]),
             ...(fetchMiddlewares<RequestHandler>(UsersController)),
             ...(fetchMiddlewares<RequestHandler>(UsersController.prototype.deleteUser)),
 
@@ -400,6 +410,65 @@ export function RegisterRoutes(app: express.Router) {
 
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
+
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+    function authenticateMiddleware(security: TsoaRoute.Security[] = []) {
+        return async function runAuthenticationMiddleware(request: any, _response: any, next: any) {
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            // keep track of failed auth attempts so we can hand back the most
+            // recent one.  This behavior was previously existing so preserving it
+            // here
+            const failedAttempts: any[] = [];
+            const pushAndRethrow = (error: any) => {
+                failedAttempts.push(error);
+                throw error;
+            };
+
+            const secMethodOrPromises: Promise<any>[] = [];
+            for (const secMethod of security) {
+                if (Object.keys(secMethod).length > 1) {
+                    const secMethodAndPromises: Promise<any>[] = [];
+
+                    for (const name in secMethod) {
+                        secMethodAndPromises.push(
+                            expressAuthentication(request, name, secMethod[name])
+                                .catch(pushAndRethrow)
+                        );
+                    }
+
+                    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+                    secMethodOrPromises.push(Promise.all(secMethodAndPromises)
+                        .then(users => { return users[0]; }));
+                } else {
+                    for (const name in secMethod) {
+                        secMethodOrPromises.push(
+                            expressAuthentication(request, name, secMethod[name])
+                                .catch(pushAndRethrow)
+                        );
+                    }
+                }
+            }
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            try {
+                request['user'] = await promiseAny(secMethodOrPromises);
+                next();
+            }
+            catch(err) {
+                // Show most recent error as response
+                const error = failedAttempts.pop();
+                error.status = error.status || 401;
+                next(error);
+            }
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        }
+    }
 
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 

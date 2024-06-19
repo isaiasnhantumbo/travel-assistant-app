@@ -1,37 +1,39 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+export interface IContainerProps {
+  isLoggedIn: boolean;
+}
+export const Container = styled.div<IContainerProps>`
+  ${(props) =>
+    !props.isLoggedIn &&
+    css`
+      filter: blur(4px);
+    `}
 
-export const Container = styled.div`
- width: 8.25rem; 
-  height: 7rem;
+  margin-top: 12px;
+  width: 34.58rem;
+  height: 19rem;
   background: #1e213a;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1.125rem 1.375rem;
+  text-align: center;
+  gap: 1rem;
+  @media (max-width: 720px) {
+    width: 24.58rem;
+  }
   h3 {
     margin-bottom: 8px;
-  }
-  h4 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 19px;
-    text-align: center;
     color: #e7e7eb;
-  }
-  .currency-list {
-    display: flex;
-    gap: 1.125rem;
-    flex-direction: row;
-  }
-  .temperatureValueContainer {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
+    line-height: 19px;
   }
 `;
-export const TemperatureValue = styled.p`
+export const Value = styled.p`
+  /* filter: blur(6px); */
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 19px;
-  color:#A09FB1;
+  color: #a09fb1;
 `;

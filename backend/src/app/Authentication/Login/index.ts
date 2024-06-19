@@ -31,7 +31,7 @@ export class Login {
     if (!passwordMatch) {
       throw new BadRequestError("Email or password incorret!");
     }
-    const token = sign({}, "topsecret", {
+    const token = sign({}, process.env.TOKEN_SECRET, {
       subject: user.id,
       expiresIn: "1d"
     });

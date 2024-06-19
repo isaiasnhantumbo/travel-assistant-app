@@ -15,7 +15,9 @@ export class OpenBankApi implements IBankDataApi {
       `${process.env.OPEN_BANK_API_URL}/v2/countries/${countryCode}/indicators/SP.POP.TOTL?format=json`
     );
     console.log("getPopulationDataByCountry REsponse", responseData);
-    return responseData;
+    return {
+      data: responseData[1]
+    };
   }
 
   async getPibPerCapitalDataByCountry (
@@ -25,6 +27,8 @@ export class OpenBankApi implements IBankDataApi {
       `${process.env.OPEN_BANK_API_URL}/v2/countries/${countryCode}/indicators/NY.GDP.MKTP.CD?format=json`
     );
     console.log("getPibPerCapitalDataByCountry REsponse", responseData);
-    return responseData;
+    return {
+      data: responseData[1]
+    };
   }
 }

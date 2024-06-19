@@ -14,6 +14,24 @@ body{
   color: #E7E7EB;
   background: #100e1d;
 }
+.places-container {
+  /* position: absolute;
+  top: 10px;
+  left: 50%; */
+  /* transform: translateX(-50%);
+  z-index: 10; */
+  width: 300px;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.combobox-input {
+  width: 100%;
+  padding: 0.5rem;
+}
 
 button{
   border: none;
