@@ -350,17 +350,7 @@
 					"date": {
 						"type": "string"
 					},
-					"rates": {
-						"items": {
-							"properties": {},
-							"additionalProperties": {
-								"type": "number",
-								"format": "double"
-							},
-							"type": "object"
-						},
-						"type": "array"
-					}
+					"rates": {}
 				},
 				"required": [
 					"success",
@@ -440,7 +430,10 @@
 			"IBankApiResponse": {
 				"properties": {
 					"data": {
-						"$ref": "#/components/schemas/IData"
+						"items": {
+							"$ref": "#/components/schemas/IData"
+						},
+						"type": "array"
 					}
 				},
 				"required": [

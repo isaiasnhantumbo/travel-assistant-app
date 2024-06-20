@@ -140,7 +140,7 @@ const models: TsoaRoute.Models = {
             "timestamp": {"dataType":"double","required":true},
             "base": {"dataType":"string","required":true},
             "date": {"dataType":"string","required":true},
-            "rates": {"dataType":"array","array":{"dataType":"nestedObjectLiteral","nestedProperties":{},"additionalProperties":{"dataType":"double"}},"required":true},
+            "rates": {"dataType":"any","required":true},
         },
         "additionalProperties": false,
     },
@@ -163,7 +163,7 @@ const models: TsoaRoute.Models = {
     "IBankApiResponse": {
         "dataType": "refObject",
         "properties": {
-            "data": {"ref":"IData","required":true},
+            "data": {"dataType":"array","array":{"dataType":"refObject","ref":"IData"},"required":true},
         },
         "additionalProperties": false,
     },

@@ -24,7 +24,7 @@ export interface IData {
   decimal: number
 }
 export interface IBankApiResponse {
-  data: IData
+  data: IData[]
 }
 
 export interface IBankDataApi {
