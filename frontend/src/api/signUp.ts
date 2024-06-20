@@ -6,12 +6,8 @@ export interface ISignUpBody {
 }
 
 export async function signUp(requestBody: ISignUpBody) {
-  try {
-    const { data } = await api.post(`users`, {
-      ...requestBody,
-    });
-    return data;
-  } catch (error) {
-    console.log({ error });
-  }
+  const { data } = await api.post(`users`, {
+    ...requestBody,
+  });
+  return data;
 }

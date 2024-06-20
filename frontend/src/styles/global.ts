@@ -14,12 +14,11 @@ body{
   color: #E7E7EB;
   background: #100e1d;
 }
+[data-reach-combobox-popover] {
+	background: #1e213a !important;
+}
 .places-container {
-  /* position: absolute;
-  top: 10px;
-  left: 50%; */
-  /* transform: translateX(-50%);
-  z-index: 10; */
+
   width: 300px;
 }
 

@@ -7,24 +7,23 @@ import {
   useState,
 } from 'react';
 
+import { IGetDetailsResponse, ISelectedCity } from '../@types/IAppTypes';
 import {
   getDestinationDetails,
   getDestinationDetailsParams,
 } from '../api/getDestinationDetails';
 import { getWeatherPreview } from '../api/getWeather';
 import { ISignInBody, login } from '../api/login';
+import { signUp } from '../api/signUp';
 
 interface SharedProviderProps {
   children: ReactNode;
 }
-type IGetData = {
-  latitude: number;
-  longitude: number;
-};
 
 interface SharedContextData {
   onGetWeather: (data: any) => Promise<void>;
-  onSignIn: (data: any) => Promise<boolean>;
+  onSignIn: (data: ISignInBody) => Promise<boolean>;
+  onSignUp: (data: ISignInBody) => Promise<boolean>;
   selectedCity: any;
   onSelectCity: any;
   shared: IGetDetailsResponse;
@@ -90,6 +89,16 @@ export function SharedProvider({ children }: SharedProviderProps) {
       return false;
     }
   }
+  async function onSignUp(data: ISignInBody) {
+    try {
+      const responseData = await signUp(data);
+      console.log({ responseData });
+
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
 
   return (
     <SharedContext.Provider
@@ -99,6 +108,7 @@ export function SharedProvider({ children }: SharedProviderProps) {
         onGetWeather,
         isLoggedIn,
         onSignIn,
+        onSignUp,
         shared,
       }}
     >
@@ -111,51 +121,4 @@ export function useSharedData() {
   const context = useContext(SharedContext);
 
   return context;
-}
-
-export interface ISelectedCity {
-  lat: number;
-  lng: number;
-  address: string;
-  results: Result[];
-}
-
-export interface Result {
-  address_components: AddressComponent[];
-  formatted_address: string;
-  place_id: string;
-  types: string[];
-}
-
-export interface AddressComponent {
-  long_name: string;
-  short_name: string;
-  types: string[];
-}
-
-interface IGetDetailsResponse {
-  weather: any;
-  exchange: any;
-  pibPerCapitalData: IBankApiResponse;
-  populationData: IBankApiResponse;
-}
-
-export interface IData {
-  indicator: {
-    id: string;
-    value: string;
-  };
-  country: {
-    id: string;
-    value: string;
-  };
-  countryiso3code: string;
-  date: string;
-  value?: number;
-  unit: string;
-  obs_status: string;
-  decimal: number;
-}
-export interface IBankApiResponse {
-  data: IData[];
 }
