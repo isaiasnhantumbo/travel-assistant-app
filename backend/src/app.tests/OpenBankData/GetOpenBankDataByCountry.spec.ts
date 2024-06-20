@@ -12,9 +12,9 @@ describe("Get Open Bank Data By Country", () => {
   });
 
   it("should return data", async () => {
-    const weatherData = await getOpenBankDataByCountry.handle("MZ");
+    const openBankData = await getOpenBankDataByCountry.handle("MZ");
 
-    expect(weatherData).toBeDefined();
+    expect(openBankData).toBeDefined();
   });
 
   it("should throw BadRequestError for invalid country zone", async () => {
