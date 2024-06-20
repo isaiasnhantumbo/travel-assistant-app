@@ -7,7 +7,7 @@
     weather, and exchange rates.
     
  - [x] For unauthenticated visitors, display only the weather forecast and blur other data.
- - [ ] Provide an option to create an account to access full data. (Almost DONE)
+ - [x] Provide an option to create an account to access full data.
        
 
 
