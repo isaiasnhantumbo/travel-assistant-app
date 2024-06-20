@@ -11,14 +11,18 @@ export function SignIn() {
   const navigate = useNavigate();
 
   async function handleSignIn(e: any) {
-    e.preventDefault();
-    const signInResponse = await onSignIn({
-      email,
-      password,
-    });
-    console.log({ signInResponse });
-    if (signInResponse) {
-      navigate('/', { replace: true });
+    try {
+      e.preventDefault();
+      const signInResponse = await onSignIn({
+        email,
+        password,
+      });
+      console.log({ signInResponse });
+      if (signInResponse) {
+        navigate('/', { replace: true });
+      }
+    } catch (error) {
+      console.log({ error });
     }
   }
   return (
@@ -34,6 +38,7 @@ export function SignIn() {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
+          required
         />
         <input
           type="password"
@@ -41,6 +46,7 @@ export function SignIn() {
           onChange={(e) => {
             setPassword(e.target.value);
           }}
+          required
         />
         <button onClick={handleSignIn}>Entrar</button>
       </FormContainer>
