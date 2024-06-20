@@ -1,6 +1,6 @@
 # Frontend
 
- - [ ]  Design a user-friendly interface with a clean layout that adapts to various screen sizes (responsive design). (Almost DONE)
+ - [x]  Design a user-friendly interface with a clean layout that adapts to various screen sizes (responsive design).
      
  - [x] Implement a search functionality that communicates with the backend to retrieve data.
  - [x] Display the results in an organized manner, with separate sections for population/GDP,
