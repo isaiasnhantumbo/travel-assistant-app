@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-items: center;
   text-align: center;
+  height: 100vh;
 `;
 
 export const FormContainer = styled.form`

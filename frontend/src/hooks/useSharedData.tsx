@@ -15,6 +15,7 @@ import {
 import { getWeatherPreview } from '../api/getWeather';
 import { ISignInBody, login } from '../api/login';
 import { signUp } from '../api/signUp';
+import { SignUpForm } from '../pages/auth/SignUp';
 
 interface SharedProviderProps {
   children: ReactNode;
@@ -23,7 +24,7 @@ interface SharedProviderProps {
 interface SharedContextData {
   onGetWeather: (data: any) => Promise<void>;
   onSignIn: (data: ISignInBody) => Promise<boolean>;
-  onSignUp: (data: ISignInBody) => Promise<boolean>;
+  onSignUp: (data: SignUpForm) => Promise<boolean>;
   selectedCity: any;
   onSelectCity: any;
   shared: IGetDetailsResponse;
@@ -89,7 +90,7 @@ export function SharedProvider({ children }: SharedProviderProps) {
       return false;
     }
   }
-  async function onSignUp(data: ISignInBody) {
+  async function onSignUp(data: SignUpForm) {
     try {
       const responseData = await signUp(data);
       console.log({ responseData });

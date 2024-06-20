@@ -11,6 +11,10 @@ export const Container = styled.div`
 export const WeatherListContainer = styled.div`
   display: flex;
   gap: 0.5rem;
+  @media (max-width: 965px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
   @media (max-width: 720px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,7 +23,8 @@ export const WeatherListContainer = styled.div`
 export const DestinationDetailsContainer = styled.div`
   display: flex;
   gap: 0.5rem;
-  @media (max-width: 720px) {
+    
+  @media (max-width: 965px) {
     display: grid;
     grid-template-columns: repeat(1, 300px);
   }

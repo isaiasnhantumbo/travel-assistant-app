@@ -3,9 +3,7 @@ export interface IExchangeApiResponse {
   timestamp: number
   base: string
   date: string
-  rates: Array<{
-    [currency: string]: number
-  }>
+  rates: any
 }
 
 export interface IExchangeApi {
