@@ -23,7 +23,7 @@ export const WeatherListContainer = styled.div`
 export const DestinationDetailsContainer = styled.div`
   display: flex;
   gap: 0.5rem;
-  
+    
   @media (max-width: 965px) {
     display: grid;
     grid-template-columns: repeat(1, 300px);
